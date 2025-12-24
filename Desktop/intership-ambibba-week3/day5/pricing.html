@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional Pricing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="pricing">
+
+  <h1>Transparent Pricing</h1>
+  <p>Choose a plan that fits your needs</p>
+
+  <div class="toggle">
+    <button class="active" onclick="setPlan('monthly')">Monthly</button>
+    <button onclick="setPlan('yearly')">Yearly</button>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Basic</h3>
+      <div class="price" id="basicPrice">$9 <span>/mo</span></div>
+      <ul>
+        <li>✔ Core features</li>
+        <li>✔ Email support</li>
+        <li>✔ Single user</li>
+      </ul>
+      <button class="buy">Get Started</button>
+    </div>
+
+    <div class="card popular">
+      <div class="badge">Most Popular</div>
+      <h3>Pro</h3>
+      <div class="price" id="proPrice">$19 <span>/mo</span></div>
+      <ul>
+        <li>✔ Everything in Basic</li>
+        <li>✔ Priority support</li>
+        <li>✔ Team access</li>
+      </ul>
+      <button class="buy">Buy Pro</button>
+    </div>
+
+    <div class="card">
+      <h3>Enterprise</h3>
+      <div class="price" id="entPrice">$49 <span>/mo</span></div>
+      <ul>
+        <li>✔ All Pro features</li>
+        <li>✔ Dedicated manager</li>
+        <li>✔ Custom solutions</li>
+      </ul>
+      <button class="buy">Contact Sales</button>
+    </div>
+
+  </div>
+
+  <div class="footer"> pricing UI</div>
+</div>
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>

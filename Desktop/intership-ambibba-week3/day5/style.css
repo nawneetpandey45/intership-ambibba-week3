@@ -1,0 +1,133 @@
+:root{
+  --bg:#0b0f1a;
+  --card:#111827cc;
+  --accent:#2563eb;
+  --success:#22c55e;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#020617,#0f172a);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--text);
+}
+
+.pricing{
+  width:100%;
+  max-width:1100px;
+  padding:40px;
+  text-align:center;
+}
+
+/* Header */
+.pricing h1{
+  font-size:34px;
+}
+.pricing p{
+  color:var(--muted);
+  margin-top:8px;
+}
+
+/* Toggle */
+.toggle{
+  margin:30px auto;
+  display:inline-flex;
+  background:#020617;
+  padding:6px;
+  border-radius:30px;
+}
+.toggle button{
+  padding:10px 20px;
+  border:none;
+  background:none;
+  color:var(--muted);
+  font-weight:600;
+  cursor:pointer;
+  border-radius:24px;
+}
+.toggle button.active{
+  background:var(--accent);
+  color:white;
+}
+
+/* Cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  margin-top:20px;
+}
+
+.card{
+  background:var(--card);
+  backdrop-filter:blur(16px);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 30px 60px rgba(0,0,0,.6);
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card.popular{
+  outline:2px solid var(--accent);
+}
+
+.badge{
+  background:var(--accent);
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:11px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  font-size:20px;
+  margin-bottom:6px;
+}
+
+.price{
+  font-size:36px;
+  font-weight:700;
+  margin:16px 0;
+}
+
+.price span{
+  font-size:14px;
+  color:var(--muted);
+}
+
+ul{
+  list-style:none;
+  text-align:left;
+  margin:20px 0;
+}
+ul li{
+  margin:10px 0;
+  color:var(--muted);
+}
+
+button.buy{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:30px;
+  background:var(--accent);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.footer{
+  margin-top:30px;
+  font-size:12px;
+  opacity:.6;
+}
